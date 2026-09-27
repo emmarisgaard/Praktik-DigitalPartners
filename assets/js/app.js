@@ -16,3 +16,31 @@ readMoreButton.addEventListener('click', function () {
     }
 
 });
+
+let likes = 0;
+
+const likeButtons = document.querySelectorAll('.likeButton');
+const totalLikes = document.querySelector('.totalLikes');
+
+likeButtons.forEach(function (likeButton) {
+
+    likeButton.addEventListener('click', function () {
+        event.preventDefault();
+        if (likeButton.classList.contains('fa-regular')) {
+
+            likeButton.classList.remove('fa-regular');
+            likeButton.classList.add('fa-solid');
+
+            likes++;
+
+        } else {
+
+            likeButton.classList.remove('fa-solid');
+            likeButton.classList.add('fa-regular');
+
+            likes--;
+        }
+
+        totalLikes.textContent = likes;
+    });
+});

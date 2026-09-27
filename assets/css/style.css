@@ -151,6 +151,8 @@ main {
 }
 
 /* Main left section */
+
+
 .boligInfo {
     display: flex;
     align-items: center;
@@ -200,6 +202,19 @@ main {
 
 
 /* Main right section */
+.gem {
+    display: flex;
+    align-items: center;
+    margin-block: 20px;
+    justify-content: end;
+    gap: 10px;
+
+    i {
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
+
 .priceBox {
     padding: 20px;
     border: solid 2px var(--textColor);
@@ -277,17 +292,64 @@ table {
         background-color: var(--tableColor);
     }
 
-
-
+    th,
+    td {
+        padding: 12px;
+    }
 }
 
-th,
-td {
-    padding: 12px;
-    /* border-bottom: 1px solid var(--headerFooterColor); */
-}
 
 /* RELATEREDE BOLIGER SECTION */
+
+.relatedBolig {
+    margin-top: 40px;
+
+
+    .boligCards {
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+
+        .boligCard {
+            flex: 1;
+            background-color: var(--cardColor);
+            border-radius: 5px;
+            box-shadow: var(--shadow);
+            text-decoration: none;
+            transition: transform 0.2s ease;
+
+            img {
+                width: 100%;
+                height: 180px;
+                object-fit: cover;
+            }
+
+            .cardInfo {
+                padding: 10px;
+
+                .cardHeadlineLike {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    gap: 10px;
+
+
+                    i {
+                        font-size: 20px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+        }
+
+        .boligCard:hover {
+            transform: translateY(-3px);
+        }
+
+    }
+
+}
 
 
 /* FOOTER */
