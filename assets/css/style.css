@@ -2,6 +2,35 @@
     box-sizing: border-box;
 }
 
-body {
+body,
+p,
+h1,
+h2,
+h3 {
     margin: 0;
 }
+
+/* VARIABLE */
+:root {
+    /* Farver */
+    --backgroundColor: #F7f4ef;
+    --textColor: #5c4636;
+    --buttonColor: #9b8066;
+    --hoverColor: #cdbba5;
+    --cardColor: white;
+
+    /* Skygge */
+    --shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* HEADER */
+
+/* HERO - BILLEDE SLIDER */
+
+/* MAIN SECTION */
+/* DETALJER OM BOLIG SECTION */
+/* RELATEREDE BOLIGER SECTION */
+
+
+/* FOOTER */
