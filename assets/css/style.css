@@ -2,29 +2,80 @@
     box-sizing: border-box;
 }
 
-body,
-p,
-h1,
-h2,
-h3 {
-    margin: 0;
-}
 
 /* VARIABLE */
 :root {
     /* Farver */
     --backgroundColor: #F7f4ef;
     --textColor: #5c4636;
+    --headerFooterColor: #cdbba5;
     --buttonColor: #9b8066;
     --hoverColor: #cdbba5;
     --cardColor: white;
 
     /* Skygge */
     --shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+/* GENERAL STYLING */
+body,
+a,
+p,
+h1,
+h2,
+h3 {
+    margin: 0;
+    color: var(--textColor);
+
+}
+
+body {
+    background-color: var(--backgroundColor);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 
 /* HEADER */
+header {
+    background-color: var(--headerFooterColor);
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-inline: 40px;
+    }
+
+    .logo {
+        max-width: 100px;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 50px;
+    }
+
+    i {
+        font-size: 22px;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        text-underline-offset: 5px;
+    }
+
+}
+
+
 
 /* HERO - BILLEDE SLIDER */
 
