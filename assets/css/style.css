@@ -12,6 +12,7 @@
     --buttonColor: #5c4636;
     --hoverColor: #9b8066;
     --cardColor: white;
+    --tableColor: #E8DED0;
 
     /* Skygge */
     --shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
@@ -247,9 +248,45 @@ main {
 .sectionLine {
     height: 5px;
     background-color: var(--textColor);
+    margin-block: 40px;
 }
 
+
 /* DETALJER OM BOLIG SECTION */
+.mainDetailBox {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+
+
+}
+
+table {
+    width: 400px;
+    border: 2px solid var(--tableColor);
+    border-collapse: collapse;
+
+    tr {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tableColor {
+        background-color: var(--tableColor);
+    }
+
+
+
+}
+
+th,
+td {
+    padding: 12px;
+    /* border-bottom: 1px solid var(--headerFooterColor); */
+}
+
 /* RELATEREDE BOLIGER SECTION */
 
 
