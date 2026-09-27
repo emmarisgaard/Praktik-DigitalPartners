@@ -85,7 +85,7 @@ header {
 
 
 
-/* HERO - BILLEDE SLIDER */
+/* HERO */
 .heroSection {
     display: flex;
     position: relative;
@@ -121,6 +121,69 @@ header {
     text-decoration: underline;
     text-underline-offset: 5px;
     transition: background-color 0.3s ease;
+}
+
+/* OVERLAY - BILLEDE SLIDER */
+/* IMAGE OVERLAY */
+
+.imageOverlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+
+    background-color: rgba(0, 0, 0, 0.85);
+
+    align-items: center;
+    justify-content: center;
+}
+
+.imageOverlay.active {
+    display: flex;
+}
+
+.overlayImage {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+
+/* LUK KNAP */
+
+.closeOverlay {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+
+    background: none;
+    border: none;
+    color: white;
+
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+/* SLIDER KNAPPER */
+
+.sliderButton {
+    position: absolute;
+
+    background: none;
+    border: none;
+    color: white;
+
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.previousImage {
+    left: 30px;
+}
+
+.nextImage {
+    right: 30px;
 }
 
 
