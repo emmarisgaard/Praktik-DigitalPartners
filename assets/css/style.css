@@ -27,7 +27,7 @@ h2,
 h3 {
     margin: 0;
     color: var(--textColor);
-
+    line-height: 150%;
 }
 
 body {
@@ -134,13 +134,121 @@ header {
             list-style: none;
         }
 
-        a {
-            /* text-decoration: none; */
-        }
     }
 }
 
 /* MAIN SECTION */
+main {
+    margin: 40px 140px;
+
+}
+
+.mainTop {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+/* Main left section */
+.boligInfo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.description {
+    margin-block: 20px
+}
+
+.descriptionText {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10;
+    overflow: hidden;
+
+    h2 {
+        margin-top: 20px;
+    }
+}
+
+
+.readMoreButton {
+    margin-top: 20px;
+    padding: 12px 18px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--buttonColor);
+    color: var(--backgroundColor);
+    cursor: pointer;
+    box-shadow: var(--shadow);
+}
+
+.readMoreButton:hover {
+    background-color: var(--hoverColor);
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.descriptionText.expanded {
+    display: block;
+}
+
+
+
+
+/* Main right section */
+.priceBox {
+    padding: 20px;
+    border: solid 2px var(--textColor);
+
+
+    hr {
+        color: var(--textColor);
+        margin-block: 20px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    span {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bold {
+        p {
+            font-weight: bold;
+        }
+    }
+
+    .kontaktButton {
+        margin-top: 20px;
+        width: 100%;
+        padding: 12px 18px;
+        border-radius: 5px;
+        border: none;
+        background-color: var(--buttonColor);
+        color: var(--backgroundColor);
+        cursor: pointer;
+        box-shadow: var(--shadow);
+    }
+
+    .kontaktButton:hover {
+        background-color: var(--hoverColor);
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        transition: background-color 0.3s ease;
+    }
+}
+
+.sectionLine {
+    height: 5px;
+    background-color: var(--textColor);
+}
+
 /* DETALJER OM BOLIG SECTION */
 /* RELATEREDE BOLIGER SECTION */
 
