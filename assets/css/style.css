@@ -40,8 +40,6 @@ body {
 /* HEADER */
 header {
     background-color: var(--headerFooterColor);
-
-
     position: sticky;
     top: 0;
     z-index: 100;
@@ -80,7 +78,6 @@ header {
         text-decoration: underline;
         text-underline-offset: 5px;
     }
-
 }
 
 
@@ -123,17 +120,14 @@ header {
     transition: background-color 0.3s ease;
 }
 
-/* OVERLAY - BILLEDE SLIDER */
-/* IMAGE OVERLAY */
 
+/* OVERLAY - BILLEDE SLIDER */
 .imageOverlay {
     display: none;
     position: fixed;
     inset: 0;
     z-index: 200;
-
     background-color: rgba(0, 0, 0, 0.85);
-
     align-items: center;
     justify-content: center;
 }
@@ -150,7 +144,6 @@ header {
 
 
 /* LUK KNAP */
-
 .closeOverlay {
     position: absolute;
     top: 20px;
@@ -169,11 +162,9 @@ header {
 
 .sliderButton {
     position: absolute;
-
     background: none;
     border: none;
     color: white;
-
     font-size: 35px;
     cursor: pointer;
 }
@@ -185,6 +176,7 @@ header {
 .nextImage {
     right: 30px;
 }
+
 
 
 /* BREADCRUMB */
@@ -201,6 +193,7 @@ header {
     }
 }
 
+
 /* MAIN SECTION */
 main {
     margin: 40px 140px;
@@ -213,8 +206,8 @@ main {
     gap: 40px;
 }
 
-/* Main left section */
 
+/* Main left section */
 
 .boligInfo {
     display: flex;
@@ -227,6 +220,7 @@ main {
     margin-block: 20px
 }
 
+/* Line-clamp description */
 .descriptionText {
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -237,7 +231,6 @@ main {
         margin-top: 20px;
     }
 }
-
 
 .readMoreButton {
     margin-top: 20px;
@@ -323,6 +316,7 @@ main {
     }
 }
 
+/* Linje */
 .sectionLine {
     height: 5px;
     background-color: var(--textColor);
@@ -336,9 +330,6 @@ main {
     display: flex;
     justify-content: center;
     gap: 40px;
-
-
-
 }
 
 table {
@@ -363,10 +354,8 @@ table {
 
 
 /* RELATEREDE BOLIGER SECTION */
-
 .relatedBolig {
     margin-top: 40px;
-
 
     .boligCards {
         display: flex;
@@ -416,3 +405,7 @@ table {
 
 
 /* FOOTER */
+footer {
+    height: 150px;
+    background-color: var(--headerFooterColor);
+}

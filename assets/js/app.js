@@ -1,6 +1,6 @@
 
 
-// LÆS MERE
+// LÆS MERE - Description
 const descriptionText = document.querySelector('.descriptionText');
 const readMoreButton = document.querySelector('.readMoreButton');
 
@@ -16,7 +16,7 @@ readMoreButton.addEventListener('click', function () {
 
 });
 
-// LIKE TOGGLE + COUNTER
+// 'LIKE' TOGGLE + COUNTER
 let likes = 0;
 
 const likeButtons = document.querySelectorAll('.likeButton');
@@ -58,7 +58,7 @@ const closeOverlay = document.querySelector('.closeOverlay');
 const previousImage = document.querySelector('.previousImage');
 const nextImage = document.querySelector('.nextImage');
 
-
+// Billeder i slider
 const images = [
     './assets/img/plantegning.jpg',
     './assets/img/hero1.jpg',
@@ -73,7 +73,7 @@ const images = [
 let currentImage = 1;
 
 
-// Se alle billeder
+// Se alle billeder - åben overlay
 
 allImagesButton.addEventListener('click', function () {
 
@@ -86,7 +86,7 @@ allImagesButton.addEventListener('click', function () {
 });
 
 
-// Se plantegning
+// Se plantegning - åben overlay
 
 floorplanButton.addEventListener('click', function () {
 
@@ -136,8 +136,8 @@ closeOverlay.addEventListener('click', function () {
     overlay.classList.remove('active');
 
 });
-// Luk overlay med ESC
 
+// Luk overlay med ESC
 document.addEventListener('keydown', function (event) {
 
     if (event.key === 'Escape') {
