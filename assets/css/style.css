@@ -285,7 +285,7 @@ main {
         text-align: center;
     }
 
-    span {
+    div {
         display: flex;
         justify-content: space-between;
     }
